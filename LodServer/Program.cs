@@ -11,7 +11,7 @@ namespace LodServer
     public static void Main(string[] args)
     {
       int port=5000;
-      port = int.Parse(Console.ReadLine());
+      //port = int.Parse(Console.ReadLine());
       Host(args, port).Run();
     }
 
