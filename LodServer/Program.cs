@@ -1,25 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 namespace LodServer
 {
-    public class Program
+  public class Program
+  {
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            BuildWebHost(args).Run();
-        }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+      int port=5000;
+      port = int.Parse(Console.ReadLine());
+      Host(args, port).Run();
     }
+
+    public static IWebHost Host(string[] args, int port) =>
+      WebHost.CreateDefaultBuilder(args)
+      .UseKestrel(options =>
+        {
+          options.Listen(IPAddress.Any, port);
+        })
+      .UseContentRoot(Directory.GetCurrentDirectory())
+      .UseIISIntegration()
+      .UseStartup<Startup>()
+      .Build();
+  }
 }

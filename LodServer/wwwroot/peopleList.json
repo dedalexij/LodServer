@@ -1,0 +1,72 @@
+﻿{
+    "Peoplelist": {
+        "People": [
+            {
+                "ID": "qyfgqiyhwfoq1",
+                "Name": "Stan Smith",
+                "Sex": "male",
+                "Age": 30
+            },
+            {
+                "ID": "qmvqqwrqsds2",
+                "Name": "Jack Anderson",
+                "Sex": "male",
+                "Age": 14
+            },
+            {
+                "ID": "vdhgqvgj3",
+                "Name": "Olga Popova",
+                "Sex": "female",
+                "Age": 24
+            },
+            {
+                "ID": "lkqjweiojqiow4",
+                "Name": "Erzhena Koroleva",
+                "Sex": "female",
+                "Age": 31
+            },
+            {
+                "ID": "hqwuiehquikxhc5",
+                "Name": "German Titov",
+                "Sex": "male",
+                "Age": 42
+            },
+            {
+                "ID": "guyqwhoij6",
+                "Name": "Dmitry Vegas",
+                "Sex": "male",
+                "Age": 78
+            },
+            {
+                "ID": "kjlqwoijeo7",
+                "Name": "Solomon Shlemovich",
+                "Sex": "male",
+                "Age": 41
+            },
+            {
+                "ID": "lkkpokqw8",
+                "Name": "Alex Whitedrinker",
+                "Sex": "female",
+                "Age": 45
+            },
+            {
+                "ID": "acmwojeiwqe9",
+                "Name": "Anna Titova",
+                "Sex": "female",
+                "Age": 19
+            },
+            {
+                "ID": "qjIdwojqiowj10",
+                "Name": "Elmo Kennedy",
+                "Sex": "male",
+                "Age": 63
+            },
+            {
+                "ID": "cnoqjpIdjkqpo11",
+                "Name": "Sascha Braemer",
+                "Sex": "male",
+                "Age": 11
+            }
+        ]
+    }
+}

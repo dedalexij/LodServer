@@ -6,45 +6,37 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace LodServer
 {
-    public class Startup
+  public class Startup
+  {
+    public Startup(IHostingEnvironment hosting)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+      var builder = new ConfigurationBuilder()
+      .SetBasePath(hosting.ContentRootPath)
+      .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+      .AddJsonFile($"peopleList.json", optional: false, reloadOnChange: true)
+      .AddEnvironmentVariables();
 
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddMvc();
-        }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-            }
-
-            app.UseStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
-            });
-        }
+      Configuration = builder.Build();
     }
+
+    public IConfiguration Configuration { get; }
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+      services.Configure<People>(Configuration.GetSection("People"));
+      services.AddMvc();
+    }
+
+    public void Configure(IApplicationBuilder app, ILoggerFactory log)
+    {
+      log.AddConsole(Configuration.GetSection("Logging"));
+      log.AddDebug();
+      app.UseMvc();
+    }
+  }
 }
+
