@@ -1,0 +1,11 @@
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\bin\Debug\netcoreapp2.0\LodServer.deps.json
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\bin\Debug\netcoreapp2.0\LodServer.runtimeconfig.json
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\bin\Debug\netcoreapp2.0\LodServer.runtimeconfig.dev.json
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\bin\Debug\netcoreapp2.0\LodServer.dll
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\bin\Debug\netcoreapp2.0\LodServer.pdb
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\obj\Debug\netcoreapp2.0\LodServer.csprojResolveAssemblyReference.cache
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\obj\Debug\netcoreapp2.0\LodServer.csproj.CoreCompileInputs.cache
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\obj\Debug\netcoreapp2.0\LodServer.AssemblyInfoInputs.cache
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\obj\Debug\netcoreapp2.0\LodServer.AssemblyInfo.cs
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\obj\Debug\netcoreapp2.0\LodServer.dll
+C:\Users\Ded\Desktop\МИСОС\прога\LoD сети\LodServer\LodServer\obj\Debug\netcoreapp2.0\LodServer.pdb
